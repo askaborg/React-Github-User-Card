@@ -6,6 +6,7 @@ const DisplayFollowers = props => {
         <div>
             <p>Username: {followed.login}</p>
             <a href={followed.html_url}>Profile</a>
+            <img src={followed.avatar_url} alt="follower"></img>
         </div>
     )    
 }
