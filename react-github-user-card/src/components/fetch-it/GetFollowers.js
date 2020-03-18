@@ -21,12 +21,14 @@ class GetFollowers extends React.Component {
 
         if (gotFollowers) {
             return (
-                <div>
-                    <p>FOLLOWED BY</p>
+                <>
+                    <h1>FOLLOWED BY</h1>
                     { followedBy.map((followed, index) => 
-                        <DisplayFollowers followed={followed} index={index} />
+                        <div key={index}>
+                            <DisplayFollowers followed={followed} />
+                        </div>
                     )}
-                </div>
+                </>
             )
         }
         else return <></>

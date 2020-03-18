@@ -1,12 +1,11 @@
 import React from 'react'
 
 const DisplayFollowers = props => {
-    const { followed, index } = props
+    const { followed} = props
     return (
-        <div key={index}>
+        <div>
             <p>Username: {followed.login}</p>
             <a href={followed.html_url}>Profile</a>
-            {/* <p>Username: </p> */}
         </div>
     )    
 }
