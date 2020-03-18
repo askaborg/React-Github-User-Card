@@ -23,8 +23,8 @@ class GetFollowers extends React.Component {
             return (
                 <>
                     <h1>FOLLOWED BY</h1>
-                    { followedBy.map((followed, index) => 
-                        <div key={index}>
+                    { followedBy.map(followed => 
+                        <div key={followed.id}>
                             <DisplayFollowers followed={followed} />
                         </div>
                     )}
